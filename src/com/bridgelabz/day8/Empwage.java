@@ -10,12 +10,19 @@ public class Empwage {
 		int fullday=1;
 		int emphours=0;
 		int empwageperhours=20;
+		int empparttime=2;
 		
 		if(empCheck==fullday)
 		{
 			System.out.println("Employee is present full day");
 			
 			emphours=8;
+		}
+		else if(empCheck==empparttime)
+		{
+			System.out.println("Employee is present is part time");
+			
+			emphours=4;
 		}
 		else
 		{
