@@ -16,11 +16,11 @@ public class Empwage {
 
 	        switch (empCheck){
 	            case Fullday :
-	                System.out.println("The employee is doing full time");
+	                System.out.println("The employee  full time");
 	                empHrs = 8;
 	                break;
 	            case parttime:
-	                System.out.println("Employee is doing part time");
+	                System.out.println("Employee is Part time");
 	                empHrs = 4;
 	                break;
 	            default:
