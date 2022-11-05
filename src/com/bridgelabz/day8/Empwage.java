@@ -1,7 +1,7 @@
 package com.bridgelabz.day8;
 
 public class Empwage {
-	   static final int Fullday = 1; // Constance
+	   static final int Fullday = 1; 
 	    static final int parttime = 2;
 	    static final int Empwagehours = 20;
 
@@ -10,7 +10,7 @@ public class Empwage {
 
 	        System.out.println("Welcome to Employee wage");
 
-	        int empCheck = (int)(Math.random() * 3); //Generating Random Number
+	        int empCheck = (int)(Math.random() * 3); 
 	        int wage = 0;
 	        int empHrs = 0;
 
