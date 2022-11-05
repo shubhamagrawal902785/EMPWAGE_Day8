@@ -1,37 +1,34 @@
 package com.bridgelabz.day8;
 
 public class Empwage {
-	public static void main(String args[])
-	{
-		System.out.println("welcome to emp wage");
-		
-		int empCheck = (int)(Math.random() * 2);
-		int wage=0;
-		int fullday=1;
-		int emphours=0;
-		int empwageperhours=20;
-		int empparttime=2;
-		
-		if(empCheck==fullday)
-		{
-			System.out.println("Employee is present full day");
-			
-			emphours=8;
-		}
-		else if(empCheck==empparttime)
-		{
-			System.out.println("Employee is present is part time");
-			
-			emphours=4;
-		}
-		else
-		{
-			System.out.println("Employee is absent");
-			emphours=0;
-		}
-		
-		wage=emphours*empwageperhours;
-		System.out.println(wage);
-	}
+	   static final int Fullday = 1; // Constance
+	    static final int parttime = 2;
+	    static final int Empwagehours = 20;
 
-}
+	    public static void main(String[] args) {
+	        //Use case 4 code with Switch statement
+
+	        System.out.println("Welcome to Employee wage");
+
+	        int empCheck = (int)(Math.random() * 3); //Generating Random Number
+	        int wage = 0;
+	        int empHrs = 0;
+
+	        switch (empCheck){
+	            case Fullday :
+	                System.out.println("The employee is doing full time");
+	                empHrs = 8;
+	                break;
+	            case parttime:
+	                System.out.println("Employee is doing part time");
+	                empHrs = 4;
+	                break;
+	            default:
+	                System.out.println("Employee is Absent");
+	                empHrs = 0;
+	        }
+
+	        wage = empHrs * Empwagehours;
+	        System.out.println("The employee wage is  "+ wage);
+	    }
+	}
